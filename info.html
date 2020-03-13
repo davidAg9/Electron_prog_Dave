@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wisdom Pet Medicine</title>
+    <link rel="stylesheet" href="./app.css">
+
+
+<body id="page-info">
+    <main class="info-content">
+        <h3 class="page-headline">Wisdom Pet</h3>
+        <p>
+            Welcome to the wisdom pet App. <br>
+            <strong>Version 1.0.0</strong><br>
+            <small>
+                Built with love by
+                <a href="#" class="cl" onclick="open()">Ray Villalobos</a>
+            </small>
+        </p>
+        <p>
+            <a href="#" onclick="ipc.sendSync('closeInfoWindow')"> close window</a>
+        </p>
+    </main>
+    <script type="text/javascript">
+
+        function openLink(event) {
+            shell.openExternal('http://raybo.org');
+        }
+
+        const btn = document.querySelector('.cl');
+        function open() {
+            btn.addEventListener('click', openLink());
+        }
+
+    </script>
+    </head>
+</body>
+
+</html>
